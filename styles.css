@@ -1,3 +1,17 @@
+
 body {
-  background-color: #ebd2ff;
+  text-align: center;
+  background-color: #e1d2ff;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  color: #666666;
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Bitter', serif;
+  color: #666666;
 }
