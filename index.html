@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shiloh's AP Computer Science Project</title>
+    <title>Calculus Girl</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Bitter|Cookie|Press+Start+2P');
+    @import url('https://fonts.googleapis.com/css?family=Bitter|Cookie');
     </style>
   </head>
-  <body>
-    <h1>About Shiloh</h1>
-    <p>Under construction</p>
+
+  <body onload="display(1)">
+    <h1><i>Calculus Girl</i></h1>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="display(1)">about me</a></li>
+        <li><a href="#" onclick="display(2)">the feelings project</a></li>
+        <li><a href="#" onclick="display(3)">examples</a></li>
+        <li><a href="#" onclick="display(4)">uml diagram</a></li>
+      </ul>
+    </nav>
+
+    <p><span id="content"></span></p>
+
   </body>
+
+  <script>
+    function display(page) {
+      var content = document.getElementById("content");
+      var text;
+      var bio = "Shiloh Andersson is dead inside. ";
+      switch (page) {
+        case 1:
+          text = bio;
+          break;
+        case 2:
+          text = "This is where I talk about my FEELINGS project.";
+          break;
+        case 3:
+          text = "";
+          break;
+        case 4:
+          text = "";
+          break;
+        default:
+          text = bio;
+          break;
+      }
+      content.innerHTML = text;
+    }
+  </script>
+
 </html>

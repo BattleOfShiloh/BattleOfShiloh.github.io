@@ -1,14 +1,43 @@
 
 body {
   text-align: center;
-  background-color: #e1d2ff;
+  background-color: #e1d7f5;
 }
 
 h1 {
-  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
   font-family: 'Cookie', cursive;
   color: #666666;
 }
+
+nav {
+  background-color: #d2afff;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav a {
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  color: #666666;
+  margin: 50px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
 
 p {
   font-size: 25px;
