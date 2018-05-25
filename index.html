@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
 
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Bitter|Cookie');
+    @import url('https://fonts.googleapis.com/css?family=Bitter|Cookie|Press+Start+2P');
     </style>
   </head>
 
@@ -24,28 +24,77 @@
 
     <p><span id="content"></span></p>
 
+    <img id="image1" src="" class="center fit">
+    <img id="image2" src="" class="center fit">
+    <img id="image3" src="" class="center fit">
+    <img id="image4" src="" class="center fit">
+
+    <div class="btn">
+      <a href="https://www.linkedin.com/in/shiloh-andersson-885869158">Connect with Me on LinkedIn</a>
+      <a href="https://github.com/BattleOfShiloh/Feelings">Code for the Feelings Project</a>
+    </div>
+
   </body>
 
   <script>
     function display(page) {
       var content = document.getElementById("content");
       var text;
-      var bio = "Shiloh Andersson is dead inside. ";
+      var image1 = document.getElementById("image1");
+      var image2 = document.getElementById("image2");
+      var image3 = document.getElementById("image3");
+      var image4 = document.getElementById("image4");
       switch (page) {
         case 1:
-          text = bio;
+          text = "Shiloh Andersson--or as some people call her, Calculus Girl--"
+          + "is in love with math (wow, shocking) and programming. "
+          + "(She spends so much time thinking about math and coding that her "
+          + "friends think she needs an intervention. Please send help.) "
+          + "She is a senior at Burlingame High School and a programmer for her "
+          + "school's robotics team, the Iron Panthers. Next year, she plans to "
+          + "study one year at community college, and then transfer to a four-"
+          + "year university. Shiloh wants to pursue a double major in "
+          + "mathematics and computer science. In her free time, Shiloh enjoys "
+          + "watching YouTube videos about math and science because she enjoys "
+          + "learning for the sake of learning (what a nerd). While Shiloh loves "
+          + "STEM, she also has an interest in the arts. She has done theatre "
+          + "since her freshman year. She plays improv on her school's improv "
+          + "team, the Burlingame Improv Theatre Enthusiasts, and she has been "
+          + "on costume crew for 6 school productions. Even though Shiloh plans "
+          + "to pursue a career in STEM, she hopes to continue integrating the "
+          + "arts in her life.";
+          image1.setAttribute("src", "Images/myface.png");
+          image2.setAttribute("src", "Images/calculusmeat.png")
+          image3.setAttribute("src", "");
+          image4.setAttribute("src", "");
           break;
         case 2:
           text = "This is where I talk about my FEELINGS project.";
+          image1.setAttribute("src", "");
+          image2.setAttribute("src", "");
+          image3.setAttribute("src", "");
+          image4.setAttribute("src", "");
           break;
         case 3:
           text = "";
+          image1.setAttribute("src", "");
+          image2.setAttribute("src", "");
+          image3.setAttribute("src", "");
+          image4.setAttribute("src", "");
           break;
         case 4:
           text = "";
+          image1.setAttribute("src", "");
+          image2.setAttribute("src", "");
+          image3.setAttribute("src", "");
+          image4.setAttribute("src", "");
           break;
         default:
-          text = bio;
+          text = "";
+          image1.setAttribute("src", "");
+          image2.setAttribute("src", "");
+          image3.setAttribute("src", "");
+          image4.setAttribute("src", "");
           break;
       }
       content.innerHTML = text;
