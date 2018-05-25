@@ -24,10 +24,9 @@
 
     <p><span id="content"></span></p>
 
-    <img id="image1" src="" class="center fit">
-    <img id="image2" src="" class="center fit">
-    <img id="image3" src="" class="center fit">
-    <img id="image4" src="" class="center fit">
+    <img id="image1" src="">
+    <img id="image2" src="">
+    <img id="image3" src="">
 
     <div class="btn">
       <a href="https://www.linkedin.com/in/shiloh-andersson-885869158">Connect with Me on LinkedIn</a>
@@ -43,7 +42,6 @@
       var image1 = document.getElementById("image1");
       var image2 = document.getElementById("image2");
       var image3 = document.getElementById("image3");
-      var image4 = document.getElementById("image4");
       switch (page) {
         case 1:
           text = "Shiloh Andersson--or as some people call her, Calculus Girl--"
@@ -66,7 +64,6 @@
           image1.setAttribute("src", "Images/myface.png");
           image2.setAttribute("src", "Images/calculusmeat.png")
           image3.setAttribute("src", "");
-          image4.setAttribute("src", "");
           break;
         case 2:
           text = "Feelings are an interesting human experience. "
@@ -91,28 +88,24 @@
           image1.setAttribute("src", "");
           image2.setAttribute("src", "");
           image3.setAttribute("src", "");
-          image4.setAttribute("src", "");
           break;
         case 3:
           text = "";
           image1.setAttribute("src", "Images/happiness.png");
           image2.setAttribute("src", "Images/love.png");
           image3.setAttribute("src", "Images/sadness.png");
-          image4.setAttribute("src", "Images/deletefeelings.png");
           break;
         case 4:
           text = "";
           image1.setAttribute("src", "Images/uml.png");
           image2.setAttribute("src", "");
           image3.setAttribute("src", "");
-          image4.setAttribute("src", "");
           break;
         default:
           text = "";
           image1.setAttribute("src", "");
           image2.setAttribute("src", "");
           image3.setAttribute("src", "");
-          image4.setAttribute("src", "");
           break;
       }
       content.innerHTML = text;
