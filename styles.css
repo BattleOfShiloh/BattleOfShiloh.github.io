@@ -40,7 +40,29 @@ nav a:hover {
 
 
 p {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Bitter', serif;
   color: #666666;
+}
+
+.btn {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btn a {
+  position: relative;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: #666666;
+  margin-right: 30px;
+  padding: 10px 20px;
+  border: 1px solid #666666;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #000000;
+  border: 1px solid #000000;
 }
